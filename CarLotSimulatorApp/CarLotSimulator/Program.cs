@@ -26,6 +26,7 @@ namespace CarLotSimulator
                 car1.EngineNoise = "Loud";
                 car1.HonkNoise = "Cute";
             LottaCar.ListOfCars.Add(car1);
+
             Car car2 = new Car() 
             { 
                 EngineNoise = "Quiet", 
@@ -42,7 +43,7 @@ namespace CarLotSimulator
 
             foreach (Car item in LottaCar.ListOfCars)
             {
-                Console.WriteLine($" Make: {car.Make}, Model: {car.Model}, Year: {car.Year}");
+                Console.WriteLine($" Make: {item.Make}, Model: {item.Model}, Year: {item.Year}");
             }
 
 
